@@ -3122,8 +3122,8 @@ blockquote {
   position: relative;
   padding-top: 145px;
   padding-bottom: 145px;
-  background-image: -webkit-linear-gradient(45deg, hsla(0, 100%, 84%, .74) 11%, rgba(25, 145, 235, .8)), url('../images/eriic.jpg');
-  background-image: linear-gradient(45deg, hsla(0, 100%, 84%, .74) 11%, rgba(25, 145, 235, .8)), url('../images/eriic.jpg');
+  background-image: -webkit-linear-gradient(315deg, rgba(231, 71, 103, .9), rgba(25, 145, 235, .9)), url('../images/eriic.jpg');
+  background-image: linear-gradient(135deg, rgba(231, 71, 103, .9), rgba(25, 145, 235, .9)), url('../images/eriic.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
@@ -4102,7 +4102,7 @@ blockquote {
   padding: 11px 25px;
   border-radius: 4px;
   background-color: #fff;
-  color: #000;
+  color: rgba(0, 0, 0, .53);
   letter-spacing: 1px;
 }
 
@@ -4111,6 +4111,8 @@ blockquote {
   border-bottom: 3px solid #1991eb;
   border-left: 3px solid #fff;
   background-color: #fff;
+  color: #000;
+  font-weight: 400;
 }
 
 .tab-link-tab-1 {
@@ -4164,6 +4166,38 @@ blockquote {
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
+}
+
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  display: none;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.preloader-logo {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -5273,21 +5307,6 @@ blockquote {
     display: block;
     margin-top: 20px;
   }
-  .home-landing-image-wrap.home-landing-image1 {
-    background-image: url('../images/home-landing1-mob2x.jpg');
-    background-position: 50% -1px;
-    background-size: cover;
-  }
-  .home-landing-image-wrap.home-landing-image2 {
-    background-image: url('../images/home-landing2-mob2x.jpg');
-    background-position: 50% -1px;
-    background-size: cover;
-  }
-  .home-landing-image-wrap.home-landing-image3 {
-    background-image: url('../images/home-landing3-mob2x.jpg');
-    background-position: 50% -1px;
-    background-size: cover;
-  }
   .home-landing-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5672,7 +5691,9 @@ blockquote {
   .btn-big.btn-outline-dark.download-icon {
     background-image: -webkit-linear-gradient(270deg, transparent, transparent), url('../images/download-white.svg');
     background-image: linear-gradient(180deg, transparent, transparent), url('../images/download-white.svg');
-    background-position: 0px 0px, 40px 50%;
+    background-position: 0px 0px, 29px 50%;
+    background-size: auto, 15px;
+    background-repeat: repeat, no-repeat;
   }
   .btn-big.btn-white {
     display: block;
@@ -5690,6 +5711,9 @@ blockquote {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .structure-link.brand {
+    margin-left: 0px;
   }
   .structure-section-name {
     margin-top: -10px;
@@ -5821,6 +5845,9 @@ blockquote {
     width: 100%;
     background-position: 100% 50%;
     background-size: 115%;
+  }
+  .tab-link.w--current {
+    margin-bottom: 0px;
   }
 }
 
