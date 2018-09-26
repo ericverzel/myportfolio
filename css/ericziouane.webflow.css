@@ -3204,41 +3204,41 @@ blockquote {
 }
 
 .home-landing-image-wrap.home-landing-image1 {
-  background-image: url('../images/food-pizza-box-chalkboard.jpg');
-  background-position: 50% 50%;
+  background-image: url('../images/mask3.jpg');
+  background-position: 50% 0px;
   background-size: cover;
-  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 
 .home-landing-image-wrap.home-landing-image2 {
-  background-image: url('../images/office.jpeg');
-  background-position: 50% 50%;
+  background-image: url('../images/fdr-screen-2.jpg');
+  background-position: 50% 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .home-landing-image-wrap.home-landing-image3 {
-  background-image: url('../images/dance5.jpeg');
-  background-position: 50% -1px;
+  background-image: url('../images/Group-3.jpg');
+  background-position: 50% 0px;
   background-size: cover;
 }
 
 .home-landing-image-wrap.home-landing-image4 {
-  background-image: url('../images/mmm.jpeg');
-  background-position: 50% 50%;
+  background-image: url('../images/sushi-screen.jpg');
+  background-position: 100% 50%;
   background-size: cover;
 }
 
 .home-landing-image-wrap.home-landing-image5 {
-  background-image: url('../images/car.jpg');
-  background-position: 50% 50%;
+  background-image: url('../images/drivingschool-screen.jpg');
+  background-position: 0px 50%;
   background-size: cover;
 }
 
 .home-landing-image-wrap.home-landing-image6 {
-  background-image: url('../images/corner.jpg');
-  background-position: 0px 50%;
-  background-size: auto;
+  background-image: url('../images/kebab2.jpg');
+  background-position: 50% 0px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -4198,6 +4198,12 @@ blockquote {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+}
+
+.screenshot {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 991px) {
@@ -5808,6 +5814,7 @@ blockquote {
     text-align: center;
   }
   .hero6-wrap {
+    padding-bottom: 100px;
     background-position: 0px 0px, 50% 50%;
   }
   .hero6-buttons-wrap {
